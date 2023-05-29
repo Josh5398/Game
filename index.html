@@ -12,11 +12,12 @@
 var c1 = document.getElementById("Canvas1");
 var ct1 = c1.getContext("2d");
 ct1.fillText("hello world",10,30)
-  
+ct1.beginPath()  
 ct1.moveTo(200,200)  
 for(i=0;i<2;i++){
 ct1.lineTo(200+Math.cos(i),200+Math.sin(i))
   }  
+  ct1.stroke()
   </script>
 </body>
   </html>
